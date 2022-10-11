@@ -150,9 +150,11 @@ object OnboardingModule {
         sections = listOf(
             IntroSection(
                 "Overview",
-                "CardioFlow is a study developed by the University of California, San Francisco.\n\n" +
-                    "Through this study, we identify and measure the data of your vital signs and symptom reports.\n\n" +
-                    "With your help, we could test our algorithms and develop technology that contributes to preventing cardiovascular diseases in the U.S.",
+                """
+                    There is a Syndrome called "X", and it suddenly gives some people special power.
+                    We hypothesize that this Syndrome is related to specific vital signs and symptoms.
+                    We set out a new project called "MG" to prove our hypothesis.
+                """.trimIndent(),
             ),
             IntroSection(
                 "How to participate",
