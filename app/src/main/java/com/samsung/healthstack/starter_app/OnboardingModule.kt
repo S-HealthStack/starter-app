@@ -252,16 +252,8 @@ object OnboardingModule {
             candidates = listOf("Male", "Female"),
         ),
         ChoiceQuestionModel(
-            "hasCardiac",
-            "Do you have any existing cardiac conditions?",
-            "Examples of cardiac conditions include abnormal heart rhythms, or arrhythmias",
-            candidates = listOf("Yes", "No"),
-            answer = "Yes"
-        ),
-        ChoiceQuestionModel(
-            "hasWearableDevice",
-            "Do you currently own a wearable device?",
-            "Examples of wearable devices include Samsung Galaxy Watch 4, Fitbit, OuraRing, etc.",
+            "hasGalaxyWatch",
+            "Do you have any Galaxy Watch?",
             candidates = listOf("Yes", "No"),
             answer = "Yes"
         )
