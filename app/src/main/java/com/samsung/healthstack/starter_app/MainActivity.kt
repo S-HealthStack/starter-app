@@ -42,7 +42,8 @@ class MainActivity : ComponentActivity() {
         val healthDataSyncSpecs = listOf(
             SyncManager.HealthDataSyncSpec("HeartRate", 15, TimeUnit.MINUTES),
             SyncManager.HealthDataSyncSpec("Steps", 1, TimeUnit.DAYS),
-            SyncManager.HealthDataSyncSpec("SleepSession", 1, TimeUnit.DAYS)
+            SyncManager.HealthDataSyncSpec("SleepSession", 1, TimeUnit.DAYS),
+            SyncManager.HealthDataSyncSpec("BloodPressure", 2, TimeUnit.HOURS)
         )
 
         HealthPlatformAdapter.initialize(HealthDataService.getClient(this), healthDataRequired)
