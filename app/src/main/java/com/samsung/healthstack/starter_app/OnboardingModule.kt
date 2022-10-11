@@ -139,7 +139,7 @@ object OnboardingModule {
 
     private fun intro(@ApplicationContext context: Context) = IntroModel(
         id = "intro",
-        title = "CardioFlow",
+        title = "MG Study",
         drawableId = R.drawable.sample_image_alpha4,
         logoDrawableId = R.drawable.ic_launcher,
         summaries = listOf(
@@ -197,7 +197,7 @@ object OnboardingModule {
 
     private fun signUp() = SignUpModel(
         id = "sign-up-model",
-        title = "CardioFlow",
+        title = "MG Study",
         listOf(Basic, Google),
         description = "Thanks for joining the study!\nNow please create an account to keep track\nof your data and keep it safe.",
         drawableId = R.drawable.ic_launcher
@@ -208,7 +208,7 @@ object OnboardingModule {
             id = "registration-completed-model",
             title = "You are done!",
             buttonText = "Continue",
-            description = "Congratulations! Everything is all set for you. Now please tap on the button below to start your CardioFlow journey!",
+            description = "Congratulations! Everything is all set for you. Now please tap on the button below to start your MG Study journey!",
             drawableId = R.drawable.sample_image_alpha1
         )
 
