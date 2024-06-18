@@ -65,5 +65,17 @@
             android:name="androidx.work.impl.foreground.SystemForegroundService"
             android:foregroundServiceType="location|microphone"
             tools:node="merge"/>
+
+        <service
+            android:name=".WearableDataReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.android.gms.wearable.CHANNEL_EVENT" />
+                <data
+                    android:host="*"
+                    android:scheme="wear" />
+            </intent-filter>
+
+        </service>
     </application>
 </manifest>

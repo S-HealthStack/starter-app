@@ -61,6 +61,7 @@ dependencies {
         implementation(project(":healthdata-link:healthconnect"))
         implementation(project(":backend-integration:interface"))
         implementation(project(":backend-integration:healthstack-adapter"))
+        implementation(project(":common"))
         implementation(project(":resources:korean"))
     } else {
         implementation("io.s-healthstack:kit:${Versions.HEALTH_STACK}")
@@ -69,6 +70,7 @@ dependencies {
         implementation("io.s-healthstack:healthconnect:${Versions.HEALTH_STACK}")
         implementation("io.s-healthstack:backend-integration:${Versions.HEALTH_STACK}")
         implementation("io.s-healthstack:healthstack-adapter:${Versions.HEALTH_STACK}")
+        implementation("io.s-healthstack:common:${Versions.HEALTH_STACK}")
     }
 
     implementation(platform(AppDependencies.FIREBASE_BOM))
@@ -78,6 +80,11 @@ dependencies {
     implementation(AppDependencies.hiltImplLibs)
     implementation(AppDependencies.healthDataImplLibs)
     implementation(AppDependencies.CORE_SPLASHSCREEN)
+    implementation(AppDependencies.GSON)
+    implementation(AppDependencies.ANDROIDX_ROOM)
+    kapt(listOf(AppDependencies.ANDROIDX_ROOM_COMPILER))
+    implementation(AppDependencies.ANDROIDX_ROOM_KTX)
+    implementation(AppDependencies.PLAY_SERVICE_WEARABLE)
 
     kapt(AppDependencies.hiltKaptLibs)
 
