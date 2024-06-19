@@ -2,7 +2,7 @@ package healthstack.sample
 
 import android.app.Application
 import androidx.health.connect.client.HealthConnectClient
-import healthstack.common.room.WearableAppDataBase
+import healthstack.common.room.WearableAppDatabase
 import dagger.hilt.android.HiltAndroidApp
 import healthstack.app.task.db.TaskRoomDatabase
 import healthstack.backend.integration.BackendFacadeHolder
@@ -48,6 +48,6 @@ class ResearchApplication : Application() {
 
         AlarmUtils.initialize(this)
 
-        WearableAppDataBase.initialize(this)
+        WearableAppDatabase.initialize(this)
     }
 }

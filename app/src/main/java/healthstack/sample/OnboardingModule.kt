@@ -2,7 +2,7 @@ package healthstack.sample
 
 import android.content.Context
 import android.content.res.Configuration
-import healthstack.common.room.WearableAppDataBase
+import healthstack.common.room.WearableAppDatabase
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -271,5 +271,5 @@ object OnboardingModule {
     @Singleton
     @Provides
     fun provideWearableAppDataBase(@ApplicationContext context: Context) =
-        WearableAppDataBase.initialize(context).ecgDao()
+        WearableAppDatabase.initialize(context).ecgDao()
 }
