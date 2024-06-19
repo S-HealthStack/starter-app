@@ -65,25 +65,8 @@ dependencies {
     // locate sdk file in libs: https://developer.samsung.com/health/privileged
     implementation(fileTree("libs"))
 
-    implementation(AppDependencies.PLAY_SERVICE_WEARABLE)
-    implementation(AppDependencies.androidXImplLibsWearable)
-    implementation(AppDependencies.composeImplLibsWearable)
     implementation(AppDependencies.hiltImplLibs)
-    implementation(AppDependencies.GSON)
-    implementation(AppDependencies.WEAR_APPCOMPAT)
-    implementation(AppDependencies.WEAR_MATERIAL)
-    implementation(AppDependencies.WEAR_CONST_LAYOUT)
-    implementation(AppDependencies.WEAR_TEST_MONITOR)
-    debugImplementation(AppDependencies.uiDebugLibsWearable)
     kapt(AppDependencies.hiltKaptLibs)
-
-    // Room
-    implementation(AppDependencies.roomLibs)
-    kapt(listOf(AppDependencies.ANDROIDX_ROOM_COMPILER))
-
-    // Unit Test
-    testImplementation(AppDependencies.JUNIT)
-    testImplementation(AppDependencies.testImplLibs)
 
     modules {
         module("org.jetbrains.kotlin:kotlin-stdlib-jdk7") {
