@@ -11,8 +11,13 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+        val healthDataTypes = listOf("ECG")
+
         setContent {
-            BaseActivity(activity = this)
+            BaseActivity(
+                activity = this,
+                healthDataTypes,
+            )
         }
     }
 }
