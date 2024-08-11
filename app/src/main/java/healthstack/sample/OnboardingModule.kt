@@ -8,6 +8,7 @@ import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.android.qualifiers.ApplicationContext
 import dagger.hilt.components.SingletonComponent
+import healthstack.kit.auth.SignInProvider.Basic
 import healthstack.kit.auth.SignInProvider.Google
 import healthstack.kit.task.base.ImageArticleModel
 import healthstack.kit.task.onboarding.OnboardingTask
@@ -197,7 +198,7 @@ object OnboardingModule {
     private fun signUp() = SignUpModel(
         id = "sign-up-model",
         title = "CardioFlow",
-        listOf(Google),
+        listOf(Google, Basic),
         description = "Thanks for joining the study!\n" +
             "Now please create an account to keep track\n" +
             "of your data and keep it safe.",
@@ -242,28 +243,10 @@ object OnboardingModule {
 
     private val eligibilityQuestions: List<QuestionModel<Any>> = listOf(
         ChoiceQuestionModel(
-            "age",
-            "What's your age?",
-            candidates = (20..50).toList(),
-            viewType = Dropdown
-        ),
-        ChoiceQuestionModel(
-            "gender",
-            "What's your gender?",
-            candidates = listOf("Male", "Female"),
-        ),
-        ChoiceQuestionModel(
-            "hasCardiac",
-            "Do you have any existing cardiac conditions?",
-            "Examples of cardiac conditions include abnormal heart rhythms, or arrhythmias",
-            candidates = listOf("Yes", "No"),
-            answer = "Yes"
-        ),
-        ChoiceQuestionModel(
             "hasWearableDevice",
             "Do you currently own a wearable device?",
             "Examples of wearable devices include Samsung Galaxy Watch 4, Fitbit, OuraRing, etc.",
-            candidates = listOf("Yes", "No"),
+            candidates = listOf("Yes", "Yes"),
             answer = "Yes"
         )
     ) as List<QuestionModel<Any>>

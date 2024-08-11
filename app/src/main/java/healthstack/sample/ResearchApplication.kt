@@ -14,11 +14,15 @@ import healthstack.kit.notification.NotificationUtils
 import healthstack.kit.sensor.AudioRecorder
 import healthstack.kit.sensor.SensorUtils
 import healthstack.kit.sensor.SpeechRecognitionManager
+import java.io.File
 
 @HiltAndroidApp
 class ResearchApplication : Application() {
     override fun onCreate() {
         super.onCreate()
+
+        val dexOutputDir: File = codeCacheDir
+        dexOutputDir.setReadOnly()
 
         val healthDataRequired = listOf("HeartRate", "SleepSession")
 

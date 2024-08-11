@@ -1,0 +1,100 @@
+{
+    "project_info": {
+        "project_number": "101507942863",
+        "project_id": "health-research-kit-dev",
+        "storage_bucket": "health-research-kit-dev.appspot.com"
+    },
+    "client": [
+        {
+            "client_info": {
+                "mobilesdk_app_id": "1:101507942863:android:c296348737ff5c7f7d2aba",
+                "android_client_info": {
+                    "package_name": "com.samsung.healthcare.kit.sample"
+                }
+            },
+            "oauth_client": [
+                {
+                    "client_id": "101507942863-e3eqnp95d5p0etnprdmpn82qube3ci2q.apps.googleusercontent.com",
+                    "client_type": 1,
+                    "android_info": {
+                        "package_name": "com.samsung.healthcare.kit.sample",
+                        "certificate_hash": "bc36c55b25fb7c8c76b8aea77138a8793f5b01fa"
+                    }
+                },
+                {
+                    "client_id": "101507942863-pqk3f0q8dn96pdj7ecldoqcokgatejqa.apps.googleusercontent.com",
+                    "client_type": 1,
+                    "android_info": {
+                        "package_name": "com.samsung.healthcare.kit.sample",
+                        "certificate_hash": "3ce5979a08a8c1ab476c33298c096d5da2965c72"
+                    }
+                },
+                {
+                    "client_id": "101507942863-so184muub0hu0onnlfldq4pk226pkml2.apps.googleusercontent.com",
+                    "client_type": 1,
+                    "android_info": {
+                        "package_name": "com.samsung.healthcare.kit.sample",
+                        "certificate_hash": "2483330fb5b7f2e15827ef7e301b38096744a2b3"
+                    }
+                },
+                {
+                    "client_id": "101507942863-53fh89u7vh2ril2jdr4uh2oi5a9v88lm.apps.googleusercontent.com",
+                    "client_type": 3
+                }
+            ],
+            "api_key": [
+                {
+                    "current_key": "AIzaSyAVfI8ajXk8smuvrmV5XTcdCRZvXG3BCtM"
+                }
+            ],
+            "services": {
+                "appinvite_service": {
+                    "other_platform_oauth_client": [
+                        {
+                            "client_id": "101507942863-53fh89u7vh2ril2jdr4uh2oi5a9v88lm.apps.googleusercontent.com",
+                            "client_type": 3
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "client_info": {
+                "mobilesdk_app_id": "1:101507942863:android:28f2872cf9110cf37d2aba",
+                "android_client_info": {
+                    "package_name": "healthstack.sample"
+                }
+            },
+            "oauth_client": [
+                {
+                    "client_id": "101507942863-bt6na5bodnq6jhhcqase5vktf118eumg.apps.googleusercontent.com",
+                    "client_type": 1,
+                    "android_info": {
+                        "package_name": "healthstack.sample",
+                        "certificate_hash": "bc36c55b25fb7c8c76b8aea77138a8793f5b01fa"
+                    }
+                },
+                {
+                    "client_id": "101507942863-53fh89u7vh2ril2jdr4uh2oi5a9v88lm.apps.googleusercontent.com",
+                    "client_type": 3
+                }
+            ],
+            "api_key": [
+                {
+                    "current_key": "AIzaSyAVfI8ajXk8smuvrmV5XTcdCRZvXG3BCtM"
+                }
+            ],
+            "services": {
+                "appinvite_service": {
+                    "other_platform_oauth_client": [
+                        {
+                            "client_id": "101507942863-53fh89u7vh2ril2jdr4uh2oi5a9v88lm.apps.googleusercontent.com",
+                            "client_type": 3
+                        }
+                    ]
+                }
+            }
+        }
+    ],
+    "configuration_version": "1"
+}

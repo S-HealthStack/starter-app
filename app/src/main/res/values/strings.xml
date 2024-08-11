@@ -57,6 +57,7 @@
     <string name="gender_title">Biological Gender</string>
     <string name="gender_placeholder">Select Gender</string>
     <!-- backend integration -->
-    <string name="research_platform_endpoint">http://you.must.set.backend.url</string>
-    <string name="research_project_id">you_must_set_project_id</string>
+    <string name="research_platform_endpoint">https://hrp2.dev.ai-service.io</string>
+    <string name="research_project_id">1</string>
+
 </resources>
