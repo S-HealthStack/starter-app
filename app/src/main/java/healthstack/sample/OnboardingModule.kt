@@ -84,7 +84,7 @@ object OnboardingModule {
             "",
             signUp(),
             registrationCompleted(),
-            registrationStep()
+            // registrationStep()
         )
 
     private fun registrationStep(): RegistrationStep =
