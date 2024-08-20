@@ -198,7 +198,7 @@ object OnboardingModule {
     private fun signUp() = SignUpModel(
         id = "sign-up-model",
         title = "CardioFlow",
-        listOf(Google, Basic),
+        listOf(Basic, Google),
         description = "Thanks for joining the study!\n" +
             "Now please create an account to keep track\n" +
             "of your data and keep it safe.",
@@ -243,10 +243,28 @@ object OnboardingModule {
 
     private val eligibilityQuestions: List<QuestionModel<Any>> = listOf(
         ChoiceQuestionModel(
+            "age",
+            "What's your age?",
+            candidates = (20..50).toList(),
+            viewType = Dropdown
+        ),
+        ChoiceQuestionModel(
+            "gender",
+            "What's your gender?",
+            candidates = listOf("Male", "Female"),
+        ),
+        ChoiceQuestionModel(
+            "hasCardiac",
+            "Do you have any existing cardiac conditions?",
+            "Examples of cardiac conditions include abnormal heart rhythms, or arrhythmias",
+            candidates = listOf("Yes", "No"),
+            answer = "Yes"
+        ),
+        ChoiceQuestionModel(
             "hasWearableDevice",
             "Do you currently own a wearable device?",
             "Examples of wearable devices include Samsung Galaxy Watch 4, Fitbit, OuraRing, etc.",
-            candidates = listOf("Yes", "Yes"),
+            candidates = listOf("Yes", "No"),
             answer = "Yes"
         )
     ) as List<QuestionModel<Any>>

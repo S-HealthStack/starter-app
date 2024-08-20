@@ -3,6 +3,12 @@
           xmlns:tools="http://schemas.android.com/tools"
           package="healthstack.sample">
 
+    <uses-permission android:name="android.permission.health.READ_HEART_RATE"/>
+    <uses-permission android:name="android.permission.health.WRITE_HEART_RATE"/>
+    <uses-permission android:name="android.permission.health.READ_SLEEP"/>
+    <uses-permission android:name="android.permission.health.WRITE_SLEEP"/>
+
+
     <queries>
         <package android:name="com.google.android.apps.healthdata"/>
     </queries>
@@ -16,10 +22,7 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM"/>
 
-    <uses-permission android:name="android.permission.health.READ_HEART_RATE"/>
-    <uses-permission android:name="android.permission.health.WRITE_HEART_RATE"/>
-    <uses-permission android:name="android.permission.health.READ_SLEEP"/>
-    <uses-permission android:name="android.permission.health.WRITE_SLEEP"/>
+
 
     <application
         android:name=".ResearchApplication"
